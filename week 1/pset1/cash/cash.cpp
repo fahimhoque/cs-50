@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <math.h>
+#include <bits/stdc++.h>
+using namespace std;
 
 int main()
 {
@@ -7,7 +7,9 @@ int main()
 
     do
     {
-        float dollars_owed = get_float("Change owed: ");
+        float dollars_owed;
+        cout << "Change owed: ";
+        cin >> dollars_owed;
         cents_owed = round(dollars_owed * 100);
     } while (cents_owed <= 0);
 
