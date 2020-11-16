@@ -1,29 +1,31 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <bits/stdc++.h>
+
+using namespace std;
 int main()
 {
     int height;
     do
     {
-        height = get_int("Height: ");
+        cout << "Height: ";
+        cin >> height;
     } while (!(height >= 1 && height <= 8));
 
     for (int row = 1; row <= height; row++)
     {
         for (int k = 1; k <= height - row; k++)
         {
-            printf(" ");
+            cout << " ";
         }
 
         for (int j = 1; j <= row; j++)
         {
-            printf("#");
+            cout << "#";
         }
-        printf(" ");
-        printf(" ");
+        cout << " ";
+        cout << " ";
         for (int j = 1; j <= 1; j++)
         {
-            printf("#");
+            cout << "#";
         }
     }
 }
